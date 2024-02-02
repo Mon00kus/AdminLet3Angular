@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NopageFoundComponent } from './nopage-found/nopage-found.component';
 import { PagesComponent } from './pages/pages.component';
+import { AuthModule } from './auth/auth.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PagesComponent } from './pages/pages.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
+    PagesModule
   ],
   providers: [
     provideClientHydration()
