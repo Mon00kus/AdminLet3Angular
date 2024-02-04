@@ -11,15 +11,15 @@ import { PagesModule } from './pages/pages.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NopageFoundComponent,
-    PagesComponent
+    NopageFoundComponent/* ,
+    PagesComponent */
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule,
-    PagesModule
+    AuthModule/* ,
+    PagesModule */
   ],
   providers: [
     provideClientHydration()
