@@ -31,7 +31,8 @@ export class ProductosComponent implements OnInit {
   constructor(){ }
 
   ngOnInit(): void {
-     /*  $(document).ready(() => {
+     /*  Version TyScript, pero proviene del javaScript del Template
+      $(document).ready(() => {
       $('.product-image-thumb').on('click', function(this: HTMLElement) {
         const $imageElement = $(this).find('img');
         $('.product-image').prop('src', $imageElement.attr('src'));
