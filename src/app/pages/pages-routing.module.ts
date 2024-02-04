@@ -12,16 +12,16 @@ const routes : Routes = [
   path : 'dashboard', component: PagesComponent,
   children : [
     {
-      path: '', component: DashboardComponent
+      path: '', component: DashboardComponent, data: { titulo :'Dashboard' }
     },
     {
-      path: 'usuarios', component: UsuariosComponent
+      path: 'usuarios', component: UsuariosComponent, data: { titulo :'Usuarios' }
     },
     {
-      path: 'productos', component: ProductosComponent
+      path: 'productos', component: ProductosComponent, data: { titulo :'Productos' }
     },
     {
-      path: 'stock', component: StockComponent
+      path: 'stock', component: StockComponent, data: { titulo :'Stock' }
     }
   ]
  }
